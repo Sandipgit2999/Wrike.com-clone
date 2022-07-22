@@ -1,9 +1,0 @@
-.parent {
-  background-color: hsl(200, 70%, 16%);
-  padding-top: 80px;
-
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
