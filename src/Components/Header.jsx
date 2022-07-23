@@ -121,7 +121,7 @@ const Header = () => {
           border="1px solid white"
           margin="auto"
           marginTop="50px"
-          marginBottom="50px"
+      paddingBottom="50px"
         >
           <Box border="1px solid white">
             <img

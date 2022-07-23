@@ -6,17 +6,29 @@ import wike from "../assets/wike.png";
 const Main = () => {
   return (
     <>
-      <div>
-        <Heading color="white">Stories from our customers</Heading>
-        <Box>
-          <Box></Box>
+      <div className={Styles.body}>
+        <Heading color="white" display="flex" justifyContent="center" marginTop="40px"  marginBottom="60px">Stories from our customers</Heading>
+        <Box display="flex" paddingBottom="40px" width="85%" justifyContent="space-between" margin="auto">
           <Box>
-            <Text>
+            <img src="https://web-static.wrike.com/cdn-cgi/image/width=588,fit=cover,format=auto,q=80/content/uploads/2022/01/rebrand-quote-slider_image_syneos-health_2x.jpg?av=675edb298df70721dcf48c02c67ec608" alt="" />
+          </Box>
+          <Box display="flex" flexDirection="column" gap="20px" width="50%" color="white">
+            <Text fontSize="27px">
               "The end goal was to create an agile, professional design
               engine.Wrike was our top pick;it was the one solution that we felt
               could make thisareality." Ashley Klee,Global Senior
               Designer,KitchenAid KitchenAid
             </Text>
+            <Box display="flex" justifyContent="space-between" >
+              <Text width="55%">
+                Sherrie Beseker, Creative Technology Manager At Syneous Health
+              </Text>
+              <img
+                src="https://web-static.wrike.com/content/uploads/2022/05/rebrand-quote_logo_syneos-health-white.svg?av=3e21b4e369158318759fa3733ce138e6"
+                alt=""
+              />
+            </Box>
+            <Text>Watch Syneou's health story</Text>
           </Box>
         </Box>
       </div>
@@ -267,6 +279,34 @@ const Main = () => {
                   alt=""
                 />
               </Box>
+            </Box>
+          </Box>
+        </Box>
+        <Box className={Styles.foot}>
+          <Box display="flex" width="85%">
+            <Box color="white" border="1px solid white" paddingTop="80px">
+              <Box
+                display="flex"
+                flexDirection="column"
+                border="1px solid white"
+                gap="20px"
+                margin="auto"
+                width="70%"
+              >
+                <Heading>Integrate with the tools you already use</Heading>
+                <Text fontSize="18px">
+                  Connect your essential business tools to Wrike and make it
+                  your project control center. Google, Microsoft, Adobe®
+                  Creative Cloud®, Box, GitHub, JIRA, and many more.
+                </Text>
+                <Text></Text>
+              </Box>
+            </Box>
+            <Box>
+              <img
+                src="https://web-static.wrike.com/content/uploads/2022/04/rebrand-promo-integrations_colored-bg_desktop.svg?av=889d1fed0cf74aba8d0506c8ead5254b"
+                alt=""
+              />
             </Box>
           </Box>
         </Box>

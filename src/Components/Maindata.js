@@ -36,3 +36,15 @@ const data = [
     link: "",
   }
 ];
+
+
+Stories from our customers
+
+“The end goal was to create an agile, professional design engine. Wrike was our top pick; it was the one solution that we felt could make this a reality.”
+
+Ashley Klee, Global Senior Designer, KitchenAid
+Watch KitchenAid's story
+
+"Everyone is in Wrike daily, we’ve built one story and one version of the truth. And that is a game changer for us. Now we do our project reviews in Wrike: no more need for presentations, word documents, or any of this additional work."
+
+Francis Lalonde, Vice President of Transportation, Walmart Canada
