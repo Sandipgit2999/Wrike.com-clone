@@ -3,7 +3,13 @@ import React from "react";
 import graph1 from "../assets/graph1.png";
 import graph2 from "../assets/graph2.png";
 import Styles from "../Styles/Footer.module.css";
-import { PhoneIcon, AddIcon, WarningIcon } from "@chakra-ui/icons";
+import {
+  FaLinkedinIn,
+  FaTwitter,
+  FaInstagram,
+  FaFacebook,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -15,19 +21,21 @@ const Footer = () => {
 
         <Box
           padding="20px"
-          border="1px solid white"
-          width="720px"
+          width="750px"
           margin="auto"
+          display="flex"
+          flexDirection="column"
+          gap="30px"
         >
-          <Heading fontSize="49px" color="white">
+          <Heading fontSize="49px" width="80%" margin="auto" color="white">
             Unlock the possibilities
           </Heading>
 
-          <Text>
+          <Text color="white" fontSize="17px">
             Work As One™. Experience effortless collaboration with Wrike’s work
             management platform.
           </Text>
-          <Box border="1px solid white" marginBottom="80px">
+          <Box marginBottom="80px">
             <Input
               htmlSize={4}
               width="400px"
@@ -181,8 +189,29 @@ const Footer = () => {
               alt=""
             />
           </Box>
-          <Box>
-            <PhoneIcon />
+          <Box
+            color="white"
+            marginLeft="170px"
+            marginTop="20px"
+            display="flex"
+            justifyContent="space-between"
+            width="250px"
+          >
+            <a target="_blank" width="20px" href="https://twitter.com/wrike">
+              <FaTwitter />
+            </a>
+            <a target="_blank" href="https://www.facebook.com/Wrike">
+              <FaFacebook />
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/company/wrike">
+              <FaLinkedinIn />
+            </a>
+            <a target="_blank" href="https://www.youtube.com/user/WrikeTeam">
+              <FaYoutube />
+            </a>
+            <a target="_blank" href="https://www.instagram.com/wriketeam/">
+              <FaInstagram />
+            </a>
           </Box>
         </Box>
         <Box color="white">

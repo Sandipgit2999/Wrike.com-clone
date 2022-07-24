@@ -7,19 +7,42 @@ const Main = () => {
   return (
     <>
       <div className={Styles.body}>
-        <Heading color="white" display="flex" justifyContent="center" marginTop="40px"  marginBottom="60px">Stories from our customers</Heading>
-        <Box display="flex" paddingBottom="40px" width="85%" justifyContent="space-between" margin="auto">
+        <Heading
+          color="white"
+          display="flex"
+          justifyContent="center"
+          marginTop="40px"
+          marginBottom="60px"
+        >
+          Stories from our customers
+        </Heading>
+        <Box
+          display="flex"
+          paddingBottom="40px"
+          width="85%"
+          justifyContent="space-between"
+          margin="auto"
+        >
           <Box>
-            <img src="https://web-static.wrike.com/cdn-cgi/image/width=588,fit=cover,format=auto,q=80/content/uploads/2022/01/rebrand-quote-slider_image_syneos-health_2x.jpg?av=675edb298df70721dcf48c02c67ec608" alt="" />
+            <img
+              src="https://web-static.wrike.com/cdn-cgi/image/width=588,fit=cover,format=auto,q=80/content/uploads/2022/01/rebrand-quote-slider_image_syneos-health_2x.jpg?av=675edb298df70721dcf48c02c67ec608"
+              alt=""
+            />
           </Box>
-          <Box display="flex" flexDirection="column" gap="20px" width="50%" color="white">
+          <Box
+            display="flex"
+            flexDirection="column"
+            gap="20px"
+            width="50%"
+            color="white"
+          >
             <Text fontSize="27px">
               "The end goal was to create an agile, professional design
               engine.Wrike was our top pick;it was the one solution that we felt
               could make thisareality." Ashley Klee,Global Senior
               Designer,KitchenAid KitchenAid
             </Text>
-            <Box display="flex" justifyContent="space-between" >
+            <Box display="flex" justifyContent="space-between">
               <Text width="55%">
                 Sherrie Beseker, Creative Technology Manager At Syneous Health
               </Text>
@@ -97,7 +120,7 @@ const Main = () => {
             </Box>
           </Box>
         </Box>
-        <Box display="flex" border="1px solid blue" width="85%" margin="auto">
+        <Box display="flex" width="85%" margin="auto">
           <Box>
             <img
               style={{ width: "600px" }}
@@ -105,9 +128,8 @@ const Main = () => {
               alt=""
             />
           </Box>
-          <Box border="1px solid white" width="45%">
+          <Box width="45%">
             <Box
-              border="1px solid white"
               display="flex"
               flexDirection="column"
               gap="20px"
@@ -130,23 +152,13 @@ const Main = () => {
         </Box>
 
         <Box border="3px solid green" width="85%" margin="auto">
-          <Box
-            width="68%"
-            border="1px solid white"
-            margin="auto"
-            paddingTop="70px"
-            paddingBottom="70px"
-          >
+          <Box width="68%" margin="auto" paddingTop="70px" paddingBottom="70px">
             <Text color="white" fontSize="27px">
               Collaboration has improved dramatically, not because the people
               have changed — we've always wanted to help, but now we have a tool
               that allows us to figure out how we can help each other better.
             </Text>
-            <Box
-              display="flex"
-              border="1px solid white"
-              justifyContent="space-between"
-            >
+            <Box display="flex" justifyContent="space-between">
               <Text color="white" marginTop="13px">
                 Katy Scott, Digital Learning Manager, Monterey Bay Aquarium
               </Text>
@@ -159,10 +171,9 @@ const Main = () => {
             </Box>
           </Box>
         </Box>
-        <Box display="flex" border="1px solid blue" width="85%" margin="auto">
-          <Box border="1px solid white" width="45%">
+        <Box display="flex" width="85%" margin="auto">
+          <Box  width="45%">
             <Box
-              border="1px solid white"
               display="flex"
               flexDirection="column"
               gap="20px"
@@ -183,7 +194,7 @@ const Main = () => {
               <Text color="white">Learn More</Text>
             </Box>
           </Box>
-          <Box border="1px solid white">
+          <Box >
             <img
               style={{ width: "600px" }}
               src="https://web-static.wrike.com/cdn-cgi/image/width=981,fit=cover,format=auto,q=80/content/uploads/2020/06/rebrand-screenshot_kanban-and-gantt_2x.png?av=ecbb4f0a5a6d11d03dbd171cf4cbbc65"
@@ -195,7 +206,6 @@ const Main = () => {
         <Box border="3px solid green" width="85%" margin="auto">
           <Box
             width="68%"
-            border="1px solid white"
             margin="auto"
             paddingTop="70px"
             paddingBottom="70px"
@@ -207,7 +217,6 @@ const Main = () => {
             </Text>
             <Box
               display="flex"
-              border="1px solid white"
               justifyContent="space-between"
             >
               <Text color="white" marginTop="13px">
@@ -224,13 +233,12 @@ const Main = () => {
         </Box>
 
         {/* //lets start to build */}
-        <Box display="flex" border="1px solid white" width="85%" margin="auto">
-          <Box border="1px solid white">
+        <Box display="flex"  width="85%" margin="auto">
+          <Box >
             <img style={{ width: "600px" }} src={wike} alt="" />
           </Box>
-          <Box border="1px solid white" width="45%">
+          <Box  width="45%">
             <Box
-              border="1px solid white"
               display="flex"
               flexDirection="column"
               gap="20px"
@@ -255,7 +263,6 @@ const Main = () => {
         <Box border="3px solid green" width="85%" margin="auto">
           <Box
             width="68%"
-            border="1px solid white"
             margin="auto"
             paddingTop="70px"
             paddingBottom="70px"
@@ -267,7 +274,6 @@ const Main = () => {
             </Text>
             <Box
               display="flex"
-              border="1px solid white"
               justifyContent="space-between"
             >
               <Text color="white" marginTop="13px">
@@ -284,11 +290,10 @@ const Main = () => {
         </Box>
         <Box className={Styles.foot}>
           <Box display="flex" width="85%">
-            <Box color="white" border="1px solid white" paddingTop="80px">
+            <Box color="white"  paddingTop="80px">
               <Box
                 display="flex"
                 flexDirection="column"
-                border="1px solid white"
                 gap="20px"
                 margin="auto"
                 width="70%"

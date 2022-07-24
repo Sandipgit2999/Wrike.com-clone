@@ -1,21 +1,21 @@
-import { Button, Box, Heading, Input } from "@chakra-ui/react";
+import { Button, Box, Heading, Input, Text } from "@chakra-ui/react";
 import React from "react";
 import Styles from "../Styles/Header.module.css";
 import sc from "../assets/sc2.png";
 import sc1 from "../assets/sc1.png";
+
 const Header = () => {
+  const handlechange=()=>{
+    console.log("alert")
+    alert("Thanks for choosing us Your free trial is started")
+  }
   return (
     <div>
-      <Box display="flex"  className={Styles.bg}>
+      <Box display="flex" className={Styles.bg}>
         <Box width="300px">
           <img src={sc} alt="" />
         </Box>
-        <Box
-          padding="20px"
-          border="1px solid white"
-          width="720px"
-          margin="auto"
-        >
+        <Box padding="20px" width="720px" margin="auto">
           <Heading fontSize="49px" color="white">
             Remove barriers, find clarity,
           </Heading>
@@ -26,7 +26,7 @@ const Header = () => {
             Anything is possible with the msot powerful work management software
             at your fingertips
           </p>
-          <Box border="1px solid white" marginBottom="80px">
+          <Box marginBottom="80px">
             <Input
               htmlSize={4}
               width="400px"
@@ -41,6 +41,7 @@ const Header = () => {
               color="white"
               height="58px"
               width="180px"
+              onClick={handlechange}
             >
               Try for free
             </Button>
@@ -54,19 +55,13 @@ const Header = () => {
         </Box>
       </Box>
       <Box className={Styles.bg2}>
-        <Box
-          color="white"
-          margin="auto"
-          padding="40px"
-          border="1px solid white"
-          
-        >
+        <Box color="white" margin="auto" padding="40px">
           <p
             style={{
               margin: "auto",
               marginLeft: "500px",
               marginBottom: "30px",
-              marginTop:"50px"
+              marginTop: "50px",
             }}
             margin="auto"
           >
@@ -78,7 +73,6 @@ const Header = () => {
             justifyContent="space-between"
             margin="auto"
             display="flex"
-            border="1px solid white"
             width="1200px"
           >
             <img
@@ -118,34 +112,27 @@ const Header = () => {
         <Box
           display="flex"
           width="1200px"
-          border="1px solid white"
           margin="auto"
           marginTop="50px"
-      paddingBottom="50px"
+          paddingBottom="50px"
         >
-          <Box border="1px solid white">
+          <Box>
             <img
               src="https://web-static.wrike.com/cdn-cgi/image/width=981,fit=cover,format=auto,q=80/content/uploads/2022/06/promo-ebook_Dark-Matter-of-Work_Dark-theme_2x.png?av=153921f8a3b563eddf08828774c378ba"
               alt=""
             />
           </Box>
-          <Box
-            marginLeft="80px"
-            border="1px solid white"
-            width="800px"
-            height="100px"
-            marginTop="70px"
-          >
+          <Box marginLeft="80px" width="800px" height="100px" marginTop="70px">
             <Heading color="white" marginBottom="20px">
               Without a single source of truth for work, it could cost you.
             </Heading>
-            <p style={{ color: "white", fontSize: "20px" }}>
+            <Text color="white" fontSize="20px">
               New research from Wrike sheds light on the hidden cost of modern
               work complexities caused by low visibility, wasted time, project
               delays, and employee churn. The results are staggering.
-            </p>
+            </Text>
             <Heading fontSize="23px" color="green.600" marginTop="20px">
-              Download free report 
+              Download free report
             </Heading>
           </Box>
         </Box>
